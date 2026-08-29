@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
 
   <title>Daily Stack — Tasks</title>
 
@@ -11,16 +16,22 @@
 
 <body>
 
-  <div class="app-card">
+  <!-- Light / Dark Mode -->
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    title="Toggle light/dark mode"
+  >
+    🌙
+  </button>
 
-    <!-- Light / Dark Mode Button -->
-    <button
-      id="theme-toggle"
-      class="theme-toggle"
-      title="Toggle light/dark mode"
-    >
-      🌙
-    </button>
+  <!-- Loading Screen -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Main To-Do Card -->
+  <div class="app-card">
 
     <!-- Back Button -->
     <button
@@ -31,10 +42,9 @@
       ← Back
     </button>
 
-    <!-- App Heading -->
     <h1>To-Do List</h1>
 
-    <!-- Add Task Section -->
+    <!-- Add Task -->
     <div class="input-row">
 
       <input
@@ -52,7 +62,7 @@
     <!-- Error Message -->
     <p id="error-msg" class="error-msg"></p>
 
-    <!-- Task List -->
+    <!-- Tasks -->
     <ul id="task-list"></ul>
 
     <!-- Footer -->
@@ -70,9 +80,11 @@
 
   </div>
 
-
   <!-- Completion Screen -->
-  <div id="completion-screen" class="completion-screen hidden">
+  <div
+    id="completion-screen"
+    class="completion-screen hidden"
+  >
 
     <div class="completion-card">
 
@@ -110,9 +122,9 @@
 
   </div>
 
-
   <!-- JavaScript -->
   <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -45,9 +45,9 @@ body {
 
 /* ---------- Theme toggle button ---------- */
 .theme-toggle {
-  position: fixed;
-  top: clamp(12px, 3vw, 20px);
-  right: clamp(12px, 3vw, 20px);
+  position: absolute;
+  top: 18px;
+  right: 18px;
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -143,6 +143,7 @@ body {
 
 /* ---------- To-do app card ---------- */
 .app-card {
+    position: relative;
   width: 100%;
   max-width: 420px;
   margin: clamp(24px, 6vw, 60px) auto;
@@ -357,11 +358,11 @@ body {
     padding-bottom: env(safe-area-inset-bottom);
   }
 
-  .app-card {
-    margin: 20px 12px;
-    max-width: 100%;
-  }
-
+ .app-card {
+  width: calc(100% - 24px);
+  max-width: 420px;
+  margin: 70px auto 20px;
+}
   .input-row {
     flex-direction: column;
   }
