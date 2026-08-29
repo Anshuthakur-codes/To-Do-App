@@ -3,49 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
   <title>Daily Stack — Tasks</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <button id="theme-toggle" class="theme-toggle" title="Toggle light/dark mode">🌙</button>
-
-  <div id="loading-overlay" class="loading-overlay">
-    <div class="spinner"></div>
-  </div>
-
   <div class="app-card">
-    <button id="back-btn" class="back-btn" title="Back to home">← Back</button>
 
+    <!-- Light / Dark Mode Button -->
+    <button
+      id="theme-toggle"
+      class="theme-toggle"
+      title="Toggle light/dark mode"
+    >
+      🌙
+    </button>
+
+    <!-- Back Button -->
+    <button
+      id="back-btn"
+      class="back-btn"
+      title="Back to home"
+    >
+      ← Back
+    </button>
+
+    <!-- App Heading -->
     <h1>To-Do List</h1>
 
+    <!-- Add Task Section -->
     <div class="input-row">
-      <input type="text" id="task-input" placeholder="Add a new task..." />
-      <button id="add-btn">Add Task</button>
+
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Add a new task..."
+      />
+
+      <button id="add-btn">
+        Add Task
+      </button>
+
     </div>
 
+    <!-- Error Message -->
     <p id="error-msg" class="error-msg"></p>
 
+    <!-- Task List -->
     <ul id="task-list"></ul>
 
+    <!-- Footer -->
     <div class="footer-row">
-      <span id="task-counter">0 tasks remaining</span>
-      <button id="clear-completed-btn">Clear Completed</button>
+
+      <span id="task-counter">
+        0 tasks remaining
+      </span>
+
+      <button id="clear-completed-btn">
+        Clear Completed
+      </button>
+
     </div>
+
   </div>
 
+
+  <!-- Completion Screen -->
   <div id="completion-screen" class="completion-screen hidden">
+
     <div class="completion-card">
-      <div class="completion-emoji">🎉</div>
-      <h2>All tasks completed!</h2>
-      <p>Nice work — you cleared your whole list.</p>
-      <div class="completion-actions">
-        <button id="continue-btn" class="primary-btn">Continue</button>
-        <button id="start-over-btn" class="secondary-btn">Start Over</button>
+
+      <div class="completion-emoji">
+        🎉
       </div>
+
+      <h2>
+        All tasks completed!
+      </h2>
+
+      <p>
+        Nice work — you cleared your whole list.
+      </p>
+
+      <div class="completion-actions">
+
+        <button
+          id="continue-btn"
+          class="primary-btn"
+        >
+          Continue
+        </button>
+
+        <button
+          id="start-over-btn"
+          class="secondary-btn"
+        >
+          Start Over
+        </button>
+
+      </div>
+
     </div>
+
   </div>
 
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
+
 </body>
 </html>
