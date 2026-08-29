@@ -58,7 +58,7 @@ if (taskList) {
   let wasAllDone = false;
 
   backBtn.addEventListener("click", () => {
-    window.location.href = "landing.html";
+    window.location.href = "index.html";
   });
 
   function loadTasks() {
