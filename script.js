@@ -33,7 +33,7 @@ if (getStartedBtn) {
   getStartedBtn.addEventListener("click", () => {
     loadingOverlay.classList.remove("hidden");
     setTimeout(() => {
-      window.location.href = "todo.html";
+   window.location.href = "index.html";
     }, 700);
   });
 }
